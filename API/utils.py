@@ -3,7 +3,7 @@ from django.utils.crypto import get_random_string
 from rest_framework.authtoken.models import Token
 
 from API import models
-from ImageUploadAPI.settings import SECRET_KEY
+from ThumbnailAPI.settings import SECRET_KEY
 
 
 def user_directory_path(instance, filename):

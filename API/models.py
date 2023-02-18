@@ -9,7 +9,7 @@ from easy_thumbnails.files import get_thumbnailer
 from pytz import timezone
 from rest_framework.request import Request
 
-from ImageUploadAPI.settings import TIME_ZONE
+from ThumbnailAPI.settings import TIME_ZONE
 
 from .custom_validators import (
     MaxValueValidatorIgnoreNull,

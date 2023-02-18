@@ -85,21 +85,28 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+        'LOCATION': '/var/tmp/django_cache',
+    }
+}
+
 # https://drf-spectacular.readthedocs.io/en/latest/settings.html
 SPECTACULAR_SETTINGS = {
     "SWAGGER_UI_DIST": "SIDECAR",
     "SWAGGER_UI_FAVICON_HREF": "SIDECAR",
     "REDOC_DIST": "SIDECAR",
-    "TITLE": "ImageUploadAPI",
-    "DESCRIPTION": "API documentation for ImageUploadAPI.",
+    "TITLE": "ThumbnailAPI",
+    "DESCRIPTION": "API documentation for ThumbnailAPI.",
     "VERSION": "1.0.0",
     "EXTERNAL_DOCS": {
         "description": "source code",
-        "url": "https://github.com/Deelite34/ImageUploadAPI",
+        "url": "https://github.com/Deelite34/ThumbnailAPI",
     },
 }
 
-ROOT_URLCONF = "ImageUploadAPI.urls"
+ROOT_URLCONF = "ThumbnailAPI.urls"
 
 TEMPLATES = [
     {
@@ -117,7 +124,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "ImageUploadAPI.wsgi.application"
+WSGI_APPLICATION = "ThumbnailAPI.wsgi.application"
 
 DATABASES = {
     "default": {

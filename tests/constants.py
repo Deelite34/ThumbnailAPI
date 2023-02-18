@@ -1,6 +1,6 @@
 import os
 
-from ImageUploadAPI.settings import BASE_DIR
+from ThumbnailAPI.settings import BASE_DIR
 
 TEST_USER_LOGIN = "test_user"
 TEST_USER_PASS = "qwerty12345"

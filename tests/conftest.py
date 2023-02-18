@@ -7,7 +7,7 @@ from rest_framework.authtoken.models import Token
 from rest_framework.test import APIClient
 
 from API.models import AccountTier, APIUser
-from ImageUploadAPI.settings import TEST_API_DIR, TESTS_MEDIA_DIR
+from ThumbnailAPI.settings import TEST_API_DIR, TESTS_MEDIA_DIR
 from tests.constants import TEST_USER_LOGIN, TEST_USER_PASS
 
 

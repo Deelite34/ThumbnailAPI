@@ -13,7 +13,7 @@ RUN apt-get -qq update && \
 
 COPY . .
 
-CMD gunicorn ImageUploadAPI.wsgi:application --workers=4 --bind 0.0.0.0:8000
+CMD gunicorn ThumbnailAPI.wsgi:application --workers=4 --bind 0.0.0.0:8000
 
 
 
