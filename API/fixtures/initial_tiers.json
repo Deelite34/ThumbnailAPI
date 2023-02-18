@@ -1,0 +1,32 @@
+[
+  {
+    "model": "API.accounttier",
+    "pk": 1,
+    "fields": {
+      "tier_name": "Basic",
+      "allowed_thumbnail_sizes": "[\"200\"]",
+      "can_create_original_img_link": false,
+      "can_create_time_limited_link": false
+    }
+  },
+  {
+    "model": "API.accounttier",
+    "pk": 2,
+    "fields": {
+      "tier_name": "Premium",
+      "allowed_thumbnail_sizes": "[\"200\", \"400\"]",
+      "can_create_original_img_link": true,
+      "can_create_time_limited_link": false
+    }
+  },
+  {
+    "model": "API.accounttier",
+    "pk": 3,
+    "fields": {
+      "tier_name": "Enterprise",
+      "allowed_thumbnail_sizes": "[\"200\", \"400\"]",
+      "can_create_original_img_link": true,
+      "can_create_time_limited_link": true
+    }
+  }
+]
