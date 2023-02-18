@@ -11,13 +11,14 @@ It's also possible to create time limited thumbnails.
 
 ## Authorization
 To use API, either django token or JWT token needs to be used.  
-To get one of token, send POST request with `username` and `password` parameters to `/api/v1/auth/token/login/` or `/api/v1/auth/jwt/create/` endpoint.
-Include acquired token using Authorization header.
+To get one of token, send POST request with `username` and `password` parameters of created user to `/api/v1/auth/token/login/` or `/api/v1/auth/jwt/create/` endpoint.  
+Include acquired token in future api requests using Authorization header.
 
 ## Installation and configuration
 
 Create '.env' file using `template.env` file  
 `docker compose up`  
+Next docker compose commands should be used in different terminal, as app is running in first one  
 `docker compose exec web python manage.py migrate`  
 `docker compose exec web python manage.py collectstatic --noinput`  
 `docker compose exec web python manage.py loaddata initial_tiers` Load fixture with 3 account tiers. More can be created manually.  
